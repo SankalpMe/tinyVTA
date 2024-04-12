@@ -1,0 +1,318 @@
+
+
+================================================================
+== Vitis HLS Report for 'acti_proc'
+================================================================
+* Date:           Mon Apr  8 23:46:06 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        dma_ps
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.200 ns|     2.80 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+--------------------+-----------+-------------+-----+--------------------+---------+
+    |       Latency (cycles)       |    Latency (absolute)   |         Interval         | Pipeline|
+    |   min   |         max        |    min    |     max     | min |         max        |   Type  |
+    +---------+--------------------+-----------+-------------+-----+--------------------+---------+
+    |        1|  923289956842430976|  10.000 ns|  9.2e+09 sec|    2|  923289956842430976|       no|
+    +---------+--------------------+-----------+-------------+-----+--------------------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+--------------------+----------------------+-----------+-----------+----------+----------+
+        |                   |       Latency (cycles)       |       Iteration      |  Initiation Interval  |   Trip   |          |
+        |     Loop Name     |   min   |         max        |        Latency       |  achieved |   target  |   Count  | Pipelined|
+        +-------------------+---------+--------------------+----------------------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_85_1  |        0|  923289956842430976|  18 ~ 923289956842431|          -|          -|  0 ~ 1000|        no|
+        +-------------------+---------+--------------------+----------------------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 19
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 12 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%pc = alloca i32 1" [dma_ps.cpp:84]   --->   Operation 20 'alloca' 'pc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%spectopmodule_ln79 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [dma_ps.cpp:79]   --->   Operation 21 'spectopmodule' 'spectopmodule_ln79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %imem, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_2, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %imem"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %mem, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_4, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i512 %mem"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %insts, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_13, void @empty_10, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_14, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %insts, void @empty, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_14, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mem_offset, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_13, void @empty_12, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_14, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mem_offset, void @empty, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_14, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_13, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.00ns)   --->   "%mem_offset_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %mem_offset" [dma_ps.cpp:79]   --->   Operation 31 'read' 'mem_offset_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 32 [1/1] (1.00ns)   --->   "%insts_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %insts" [dma_ps.cpp:79]   --->   Operation 32 'read' 'insts_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 33 [1/1] (0.42ns)   --->   "%store_ln84 = store i10 0, i10 %pc" [dma_ps.cpp:84]   --->   Operation 33 'store' 'store_ln84' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln85 = br void %for.body" [dma_ps.cpp:85]   --->   Operation 34 'br' 'br_ln85' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.08>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%pc_1 = load i10 %pc" [dma_ps.cpp:85]   --->   Operation 35 'load' 'pc_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.78ns)   --->   "%icmp_ln85 = icmp_eq  i10 %pc_1, i10 1000" [dma_ps.cpp:85]   --->   Operation 36 'icmp' 'icmp_ln85' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.78ns)   --->   "%add_ln85 = add i10 %pc_1, i10 1" [dma_ps.cpp:85]   --->   Operation 37 'add' 'add_ln85' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln85 = br i1 %icmp_ln85, void %for.body.split, void %for.end" [dma_ps.cpp:85]   --->   Operation 38 'br' 'br_ln85' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i10.i3, i10 %pc_1, i3 0" [dma_ps.cpp:87]   --->   Operation 39 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln87 = zext i13 %shl_ln" [dma_ps.cpp:87]   --->   Operation 40 'zext' 'zext_ln87' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (1.08ns)   --->   "%add_ln87 = add i64 %zext_ln87, i64 %insts_read" [dma_ps.cpp:87]   --->   Operation 41 'add' 'add_ln87' <Predicate = (!icmp_ln85)> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i61 @_ssdm_op_PartSelect.i61.i64.i32.i32, i64 %add_ln87, i32 3, i32 63" [dma_ps.cpp:87]   --->   Operation 42 'partselect' 'trunc_ln' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.20>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%sext_ln87 = sext i61 %trunc_ln" [dma_ps.cpp:87]   --->   Operation 43 'sext' 'sext_ln87' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%imem_addr = getelementptr i64 %imem, i64 %sext_ln87" [dma_ps.cpp:87]   --->   Operation 44 'getelementptr' 'imem_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [8/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 45 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.20>
+ST_4 : Operation 46 [7/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 46 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.20>
+ST_5 : Operation 47 [6/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 47 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.20>
+ST_6 : Operation 48 [5/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 48 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.20>
+ST_7 : Operation 49 [4/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 49 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.20>
+ST_8 : Operation 50 [3/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 50 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.20>
+ST_9 : Operation 51 [2/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 51 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 7.20>
+ST_10 : Operation 52 [1/8] (7.20ns)   --->   "%abc_req = readreq i1 @_ssdm_op_ReadReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:87]   --->   Operation 52 'readreq' 'abc_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 7.20>
+ST_11 : Operation 53 [1/1] (7.20ns)   --->   "%abc = read i64 @_ssdm_op_Read.m_axi.i64P1A, i64 %imem_addr" [dma_ps.cpp:87]   --->   Operation 53 'read' 'abc' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 3.32>
+ST_12 : Operation 54 [1/1] (0.00ns)   --->   "%zext_ln85 = zext i10 %pc_1" [dma_ps.cpp:85]   --->   Operation 54 'zext' 'zext_ln85' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_12 : Operation 55 [1/1] (0.00ns)   --->   "%speclooptripcount_ln84 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 1000, i64 500" [dma_ps.cpp:84]   --->   Operation 55 'speclooptripcount' 'speclooptripcount_ln84' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_12 : Operation 56 [1/1] (0.00ns)   --->   "%specloopname_ln103 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [dma_ps.cpp:103]   --->   Operation 56 'specloopname' 'specloopname_ln103' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_12 : Operation 57 [1/1] (1.08ns)   --->   "%icmp_ln88 = icmp_eq  i64 %abc, i64 0" [dma_ps.cpp:88]   --->   Operation 57 'icmp' 'icmp_ln88' <Predicate = (!icmp_ln85)> <Delay = 1.08> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln88 = br i1 %icmp_ln88, void %if.end, void %for.end" [dma_ps.cpp:88]   --->   Operation 58 'br' 'br_ln88' <Predicate = (!icmp_ln85)> <Delay = 0.00>
+ST_12 : Operation 59 [1/1] (0.00ns)   --->   "%tmp2 = partselect i3 @_ssdm_op_PartSelect.i3.i64.i32.i32, i64 %abc, i32 61, i32 63" [dma_ps.cpp:91]   --->   Operation 59 'partselect' 'tmp2' <Predicate = (!icmp_ln85 & !icmp_ln88)> <Delay = 0.00>
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%N = partselect i13 @_ssdm_op_PartSelect.i13.i64.i32.i32, i64 %abc, i32 48, i32 60" [dma_ps.cpp:92]   --->   Operation 60 'partselect' 'N' <Predicate = (!icmp_ln85 & !icmp_ln88)> <Delay = 0.00>
+ST_12 : Operation 61 [1/1] (0.00ns)   --->   "%bA = partselect i16 @_ssdm_op_PartSelect.i16.i64.i32.i32, i64 %abc, i32 32, i32 47" [dma_ps.cpp:93]   --->   Operation 61 'partselect' 'bA' <Predicate = (!icmp_ln85 & !icmp_ln88)> <Delay = 0.00>
+ST_12 : Operation 62 [1/1] (0.00ns)   --->   "%bB = partselect i16 @_ssdm_op_PartSelect.i16.i64.i32.i32, i64 %abc, i32 16, i32 31" [dma_ps.cpp:94]   --->   Operation 62 'partselect' 'bB' <Predicate = (!icmp_ln85 & !icmp_ln88)> <Delay = 0.00>
+ST_12 : Operation 63 [1/1] (0.00ns)   --->   "%bAB = trunc i64 %abc" [dma_ps.cpp:95]   --->   Operation 63 'trunc' 'bAB' <Predicate = (!icmp_ln85 & !icmp_ln88)> <Delay = 0.00>
+ST_12 : Operation 64 [1/1] (0.73ns)   --->   "%switch_ln97 = switch i3 %tmp2, void %if.end18, i3 1, void %if.then15, i3 2, void %if.then17" [dma_ps.cpp:97]   --->   Operation 64 'switch' 'switch_ln97' <Predicate = (!icmp_ln85 & !icmp_ln88)> <Delay = 0.73>
+ST_12 : Operation 65 [2/2] (2.23ns)   --->   "%call_ln100 = call void @matmul, i512 %mem, i64 %mem_offset_read, i16 %bA, i16 %bB, i16 %bAB, i13 %N" [dma_ps.cpp:100]   --->   Operation 65 'call' 'call_ln100' <Predicate = (!icmp_ln85 & !icmp_ln88 & tmp2 == 2)> <Delay = 2.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 66 [2/2] (1.93ns)   --->   "%call_ln98 = call void @activ, i512 %mem, i64 %mem_offset_read, i16 %bA, i16 %bB, i13 %N" [dma_ps.cpp:98]   --->   Operation 66 'call' 'call_ln98' <Predicate = (!icmp_ln85 & !icmp_ln88 & tmp2 == 1)> <Delay = 1.93> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 67 [1/1] (0.00ns)   --->   "%ret_ln104 = ret" [dma_ps.cpp:104]   --->   Operation 67 'ret' 'ret_ln104' <Predicate = (icmp_ln88) | (icmp_ln85)> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 7.20>
+ST_13 : Operation 68 [1/2] (0.00ns)   --->   "%call_ln100 = call void @matmul, i512 %mem, i64 %mem_offset_read, i16 %bA, i16 %bB, i16 %bAB, i13 %N" [dma_ps.cpp:100]   --->   Operation 68 'call' 'call_ln100' <Predicate = (tmp2 == 2)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln101 = br void %if.end18" [dma_ps.cpp:101]   --->   Operation 69 'br' 'br_ln101' <Predicate = (tmp2 == 2)> <Delay = 0.00>
+ST_13 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln98 = call void @activ, i512 %mem, i64 %mem_offset_read, i16 %bA, i16 %bB, i13 %N" [dma_ps.cpp:98]   --->   Operation 70 'call' 'call_ln98' <Predicate = (tmp2 == 1)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln99 = br void %if.end19" [dma_ps.cpp:99]   --->   Operation 71 'br' 'br_ln99' <Predicate = (tmp2 == 1)> <Delay = 0.00>
+ST_13 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end19"   --->   Operation 72 'br' 'br_ln0' <Predicate = (tmp2 != 1)> <Delay = 0.00>
+ST_13 : Operation 73 [1/1] (7.20ns)   --->   "%imem_addr_req = writereq i1 @_ssdm_op_WriteReq.m_axi.i64P1A, i64 %imem_addr, i32 1" [dma_ps.cpp:102]   --->   Operation 73 'writereq' 'imem_addr_req' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_13 : Operation 74 [1/1] (0.42ns)   --->   "%store_ln84 = store i10 %add_ln85, i10 %pc" [dma_ps.cpp:84]   --->   Operation 74 'store' 'store_ln84' <Predicate = true> <Delay = 0.42>
+
+State 14 <SV = 13> <Delay = 7.20>
+ST_14 : Operation 75 [1/1] (7.20ns)   --->   "%write_ln102 = write void @_ssdm_op_Write.m_axi.i64P1A, i64 %imem_addr, i64 %zext_ln85, i8 255" [dma_ps.cpp:102]   --->   Operation 75 'write' 'write_ln102' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 7.20>
+ST_15 : Operation 76 [5/5] (7.20ns)   --->   "%imem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i64P1A, i64 %imem_addr" [dma_ps.cpp:102]   --->   Operation 76 'writeresp' 'imem_addr_resp' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 7.20>
+ST_16 : Operation 77 [4/5] (7.20ns)   --->   "%imem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i64P1A, i64 %imem_addr" [dma_ps.cpp:102]   --->   Operation 77 'writeresp' 'imem_addr_resp' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.20>
+ST_17 : Operation 78 [3/5] (7.20ns)   --->   "%imem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i64P1A, i64 %imem_addr" [dma_ps.cpp:102]   --->   Operation 78 'writeresp' 'imem_addr_resp' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 17> <Delay = 7.20>
+ST_18 : Operation 79 [2/5] (7.20ns)   --->   "%imem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i64P1A, i64 %imem_addr" [dma_ps.cpp:102]   --->   Operation 79 'writeresp' 'imem_addr_resp' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 18> <Delay = 7.20>
+ST_19 : Operation 80 [1/5] (7.20ns)   --->   "%imem_addr_resp = writeresp i1 @_ssdm_op_WriteResp.m_axi.i64P1A, i64 %imem_addr" [dma_ps.cpp:102]   --->   Operation 80 'writeresp' 'imem_addr_resp' <Predicate = true> <Delay = 7.20> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_19 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln85 = br void %for.body" [dma_ps.cpp:85]   --->   Operation 81 'br' 'br_ln85' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.800ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('mem_offset_read', dma_ps.cpp:79) on port 'mem_offset' (dma_ps.cpp:79) [16]  (1.000 ns)
+
+ <State 2>: 1.085ns
+The critical path consists of the following:
+	'load' operation 10 bit ('pc', dma_ps.cpp:85) on local variable 'pc', dma_ps.cpp:84 [21]  (0.000 ns)
+	'add' operation 64 bit ('add_ln87', dma_ps.cpp:87) [31]  (1.085 ns)
+
+ <State 3>: 7.200ns
+The critical path consists of the following:
+	'getelementptr' operation 64 bit ('imem_addr', dma_ps.cpp:87) [34]  (0.000 ns)
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 4>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 5>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 6>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 7>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 8>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 9>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 10>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('abc_req', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [35]  (7.200 ns)
+
+ <State 11>: 7.200ns
+The critical path consists of the following:
+	bus read operation ('abc', dma_ps.cpp:87) on port 'imem' (dma_ps.cpp:87) [36]  (7.200 ns)
+
+ <State 12>: 3.321ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln88', dma_ps.cpp:88) [37]  (1.085 ns)
+	'call' operation 0 bit ('call_ln100', dma_ps.cpp:100) to 'matmul' [47]  (2.236 ns)
+
+ <State 13>: 7.200ns
+The critical path consists of the following:
+	bus request operation ('imem_addr_req', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [55]  (7.200 ns)
+
+ <State 14>: 7.200ns
+The critical path consists of the following:
+	bus write operation ('write_ln102', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [56]  (7.200 ns)
+
+ <State 15>: 7.200ns
+The critical path consists of the following:
+	bus response operation ('imem_addr_resp', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [57]  (7.200 ns)
+
+ <State 16>: 7.200ns
+The critical path consists of the following:
+	bus response operation ('imem_addr_resp', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [57]  (7.200 ns)
+
+ <State 17>: 7.200ns
+The critical path consists of the following:
+	bus response operation ('imem_addr_resp', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [57]  (7.200 ns)
+
+ <State 18>: 7.200ns
+The critical path consists of the following:
+	bus response operation ('imem_addr_resp', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [57]  (7.200 ns)
+
+ <State 19>: 7.200ns
+The critical path consists of the following:
+	bus response operation ('imem_addr_resp', dma_ps.cpp:102) on port 'imem' (dma_ps.cpp:102) [57]  (7.200 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

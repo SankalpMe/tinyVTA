@@ -1,0 +1,47 @@
+{
+  "0": {
+    "basicblocks": 8,
+    "calls": "2 1",
+    "file": "dma_ps.cpp",
+    "fileloc": 79,
+    "instructions": 38,
+    "loads": {
+      "T": 1
+    },
+    "name": "acti_proc",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 3358
+  },
+  "1": {
+    "basicblocks": 320,
+    "calls": "",
+    "file": "dma_ps.cpp",
+    "fileloc": 20,
+    "instructions": 3207,
+    "loads": {
+      "L": 22
+    },
+    "name": "matmul",
+    "stores": {
+      "L": 50
+    },
+    "total_instructions": 3207
+  },
+  "2": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "dma_ps.cpp",
+    "fileloc": 3,
+    "instructions": 113,
+    "loads": {
+      "L": 18
+    },
+    "name": "activ",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 113
+  }
+}

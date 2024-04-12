@@ -1,0 +1,164 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module acti_proc_imem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module acti_proc_imem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module acti_proc_imem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module acti_proc_imem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module acti_proc_imem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module acti_proc_imem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module acti_proc_imem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module acti_proc_imem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module acti_proc_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module acti_proc_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module acti_proc_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module acti_proc_mem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module acti_proc_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module acti_proc_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module acti_proc_mem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module acti_proc_mem_m_axi_read is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[0]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[1]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[2]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[3]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[4]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_burst_conv/start_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[0]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[1]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[2]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[3]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[4]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/start_addr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_burst_conv/start_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/store_unit/tmp_len_reg[0]' (FDRE) to 'imem_m_axi_U/store_unit/tmp_len_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/store_unit/tmp_addr_reg[0]' (FDRE) to 'imem_m_axi_U/store_unit/tmp_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/store_unit/tmp_len_reg[1]' (FDRE) to 'imem_m_axi_U/store_unit/tmp_len_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/store_unit/tmp_addr_reg[1]' (FDRE) to 'imem_m_axi_U/store_unit/tmp_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/store_unit/\tmp_addr_reg[2] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/load_unit/tmp_len_reg[0]' (FDRE) to 'imem_m_axi_U/load_unit/tmp_len_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/load_unit/tmp_addr_reg[0]' (FDRE) to 'imem_m_axi_U/load_unit/tmp_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/load_unit/tmp_len_reg[1]' (FDRE) to 'imem_m_axi_U/load_unit/tmp_len_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/load_unit/tmp_addr_reg[1]' (FDRE) to 'imem_m_axi_U/load_unit/tmp_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/load_unit/\tmp_addr_reg[2] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[0]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[1]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[2]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[3]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[3]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[4]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[4]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_burst_conv/could_multi_bursts.addr_step_reg[5] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[11]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[12]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[13]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_burst_conv/could_multi_bursts.addr_step_reg[14] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_len_reg[0]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_addr_reg[0]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_len_reg[1]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_addr_reg[1]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_len_reg[2]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_addr_reg[2]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_len_reg[3]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_addr_reg[3]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_len_reg[4]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/store_unit/tmp_addr_reg[4]' (FDRE) to 'mem_m_axi_U/store_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[69]' (FDE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[68]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[5]' (FDE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\store_unit/tmp_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_len_reg[0]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_addr_reg[0]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_len_reg[1]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_addr_reg[1]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_len_reg[2]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_addr_reg[2]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_len_reg[3]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_addr_reg[3]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_len_reg[4]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_len_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/load_unit/tmp_addr_reg[4]' (FDRE) to 'mem_m_axi_U/load_unit/tmp_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[69]' (FDE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[68]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[5]' (FDE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\load_unit/tmp_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[0]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[1]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[2]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[3]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[4]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[11]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[12]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[13]' (FDRE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_burst_conv/could_multi_bursts.addr_step_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/store_unit/\bus_wide_gen.pad_oh_reg_reg[0] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[0]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[1]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[2]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[3]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[4]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_read/\rreq_burst_conv/start_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[0]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[1]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[2]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[3]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[4]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/start_addr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_read/rreq_burst_conv/start_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[0]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[1]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[2]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[3]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[3]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[4]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[4]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_read/\rreq_burst_conv/could_multi_bursts.addr_step_reg[5] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[11]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[12]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[13]' (FDRE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_read/\rreq_burst_conv/could_multi_bursts.addr_step_reg[14] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[0]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[1]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[2]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[3]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[4]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[11]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[12]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[13]' (FDRE) to 'mem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_read/rreq_burst_conv/could_multi_bursts.addr_step_reg[14] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[64]' (FDE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[0]' (FDE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[65]' (FDE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[66]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[1]' (FDE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_burst_conv/rs_req/data_p2_reg[2] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[64]' (FDE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[0]' (FDE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[65]' (FDE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[66]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[1]' (FDE) to 'imem_m_axi_U/bus_read/rreq_burst_conv/rs_req/data_p2_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_read/\rreq_burst_conv/rs_req/data_p2_reg[2] )
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[0]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[1]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[1]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[2]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[2]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[3]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[3]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[4]'
+INFO: [Synth 8-3886] merging instance 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[4]' (FDRE) to 'imem_m_axi_U/bus_write/wreq_burst_conv/sect_addr_buf_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_burst_conv/sect_addr_buf_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[64]' (FDE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[68]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[0]' (FDE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[65]' (FDE) to 'mem_m_axi_U/bus_write/wreq_burst_conv/rs_req/data_p2_reg[68]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_burst_conv/rs_req/data_p2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_read/rreq_burst_conv/rs_req/data_p2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_burst_conv/sect_addr_buf_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/load_unit/\fifo_rreq/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/store_unit/\fifo_wreq/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\fifo_burst/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/fifo_burst/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_read/\rreq_burst_conv/sect_addr_buf_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_throttl/aggressive_gen.req_fifo/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_read/rreq_burst_conv/sect_addr_buf_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_throttl/aggressive_gen.req_fifo/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_burst_conv/rs_req/data_p1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_read/\rreq_burst_conv/rs_req/data_p1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_burst_conv/rs_req/data_p1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_read/rreq_burst_conv/rs_req/data_p1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_throttl/aggressive_gen.rs_req/data_p2_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_throttl/aggressive_gen.rs_req/data_p2_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_throttl/aggressive_gen.rs_req/data_p1_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_throttl/aggressive_gen.rs_req/data_p1_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_throttl/aggressive_gen.req_fifo/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_throttl/aggressive_gen.req_fifo/fifo_srl_gen.U_ffo_srl/fifo_depth_gt1_gen.dout_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_throttl/aggressive_gen.rs_req/data_p2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_throttl/aggressive_gen.rs_req/data_p2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (imem_m_axi_U/bus_write/\wreq_throttl/aggressive_gen.rs_req/data_p1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mem_m_axi_U/\bus_write/wreq_throttl/aggressive_gen.rs_req/data_p1_reg[5] )

@@ -1,0 +1,77 @@
+xilinx rtfpga
+rt::do_reinfer_area_combined 1
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/bitstreambard/dma_ps/auto_synth/.gen/sources_1/bd/design_1/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/bitstreambard/dma_ps/auto_synth/.gen/sources_1/bd/design_1/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/bitstreambard/dma_ps/auto_synth/.gen/sources_1/bd/design_1/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/bitstreambard/dma_ps/auto_synth/.gen/sources_1/bd/design_1/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/bitstreambard/dma_ps/auto_synth/.gen/sources_1/bd/design_1/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/bitstreambard/dma_ps/auto_synth/.gen/sources_1/bd/design_1/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C+((D+A)*B2)')'.
+DSP Report: register ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/ad_reg_reg is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/m is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/ad is absorbed into DSP ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_U1409/acti_proc_ama_addmuladd_5ns_17ns_13ns_16ns_30_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_13ns_13ns_26_1_1_U1408/tmp_product, operation Mode is: A*B.
+DSP Report: operator mul_13ns_13ns_26_1_1_U1408/tmp_product is absorbed into DSP mul_13ns_13ns_26_1_1_U1408/tmp_product.
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[11]' (FDE) to 'p_mid_reg_17754_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[10]' (FDE) to 'p_mid_reg_17754_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[9]' (FDE) to 'p_mid_reg_17754_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[8]' (FDE) to 'p_mid_reg_17754_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[7]' (FDE) to 'p_mid_reg_17754_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[6]' (FDE) to 'p_mid_reg_17754_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[5]' (FDE) to 'p_mid_reg_17754_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[4]' (FDE) to 'p_mid_reg_17754_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[3]' (FDE) to 'p_mid_reg_17754_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[2]' (FDE) to 'p_mid_reg_17754_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[1]' (FDE) to 'p_mid_reg_17754_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[0]' (FDE) to 'p_mid_reg_17754_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln29_1_reg_17749_reg[12]' (FDE) to 'p_mid_reg_17754_reg[16]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[0]' (FDE) to 'tmp_reg_16957_reg[4]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[1]' (FDE) to 'tmp_reg_16957_reg[5]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[2]' (FDE) to 'tmp_reg_16957_reg[6]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[3]' (FDE) to 'tmp_reg_16957_reg[7]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[4]' (FDE) to 'tmp_reg_16957_reg[8]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[5]' (FDE) to 'tmp_reg_16957_reg[9]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[6]' (FDE) to 'tmp_reg_16957_reg[10]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[7]' (FDE) to 'tmp_reg_16957_reg[11]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[8]' (FDE) to 'tmp_reg_16957_reg[12]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[9]' (FDE) to 'tmp_reg_16957_reg[13]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[10]' (FDE) to 'tmp_reg_16957_reg[14]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[11]' (FDE) to 'tmp_reg_16957_reg[15]'
+INFO: [Synth 8-3886] merging instance 'zext_ln29_reg_16947_reg[12]' (FDE) to 'tmp_reg_16957_reg[16]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[0]' (FDE) to 'select_ln29_reg_17743_reg[0]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[1]' (FDE) to 'select_ln29_reg_17743_reg[1]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[2]' (FDE) to 'select_ln29_reg_17743_reg[2]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[3]' (FDE) to 'select_ln29_reg_17743_reg[3]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[4]' (FDE) to 'select_ln29_reg_17743_reg[4]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[5]' (FDE) to 'select_ln29_reg_17743_reg[5]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[6]' (FDE) to 'select_ln29_reg_17743_reg[6]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[7]' (FDE) to 'select_ln29_reg_17743_reg[7]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[8]' (FDE) to 'select_ln29_reg_17743_reg[8]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[9]' (FDE) to 'select_ln29_reg_17743_reg[9]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[10]' (FDE) to 'select_ln29_reg_17743_reg[10]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[11]' (FDE) to 'select_ln29_reg_17743_reg[11]'
+INFO: [Synth 8-3886] merging instance 'zext_ln31_reg_17760_reg[12]' (FDE) to 'select_ln29_reg_17743_reg[12]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_matmul_Pipeline_VITIS_LOOP_45_7_fu_6984/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_matmul_Pipeline_VITIS_LOOP_45_7_fu_6984/ap_done_reg_reg)
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_16_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_16_viv.

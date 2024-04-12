@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "acti_proc",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "acti_proc"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/bitstreambard/dma_ps/hls/dma_ps/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "acti_proc",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "acti_proc"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/bitstreambard/dma_ps/hls/dma_ps/solution1/csynth.tcl",
+    "sourceLine": 20,
+    "success": true
+  }
+]

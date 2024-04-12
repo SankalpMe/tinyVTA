@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dma_ps.hpp" path="/home/bitstreambard/dma_ps/hls/dma_ps.hpp"/>
+    <originFiles name="dma_ps.cpp" path="/home/bitstreambard/dma_ps/hls/dma_ps.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="dma_ps.cpp" path="/home/bitstreambard/dma_ps/hls/dma_ps.cpp"/>
+    <originFiles name="proc_tb.cpp" path="/home/bitstreambard/dma_ps/hls/proc_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

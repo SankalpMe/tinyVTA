@@ -1,0 +1,129 @@
+{
+    "1": {
+        "name": "matmul_Pipeline_VITIS_LOOP_33_3_VITIS_LOOP_35_4",
+        "file": "dma_ps.cpp",
+        "fileloc": "33",
+        "instructions": "1846",
+        "total_instructions": "1846",
+        "calls": "",
+        "basicblocks": "286",
+        "loads": {
+            "L": "259"
+        },
+        "stores": {
+            "L": "518"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "matmul_Pipeline_VITIS_LOOP_64_10",
+        "file": "dma_ps.cpp",
+        "fileloc": "64",
+        "instructions": "377",
+        "total_instructions": "377",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "matmul",
+        "file": "dma_ps.cpp",
+        "fileloc": "20",
+        "instructions": "2202",
+        "total_instructions": "6473",
+        "calls": "2 4 5 1",
+        "basicblocks": "7",
+        "loads": {
+            "L": "803"
+        },
+        "stores": {
+            "L": "278"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "4": {
+        "name": "matmul_Pipeline_VITIS_LOOP_45_7",
+        "file": "dma_ps.cpp",
+        "fileloc": "24",
+        "instructions": "133",
+        "total_instructions": "133",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "acti_proc",
+        "file": "dma_ps.cpp",
+        "fileloc": "79",
+        "instructions": "49",
+        "total_instructions": "6723",
+        "calls": "6 3",
+        "basicblocks": "9",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "matmul_Pipeline_VITIS_LOOP_51_8",
+        "file": "dma_ps.cpp",
+        "fileloc": "23",
+        "instructions": "1915",
+        "total_instructions": "1915",
+        "calls": "",
+        "basicblocks": "21",
+        "loads": {
+            "L": "513"
+        },
+        "stores": {
+            "L": "514"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "activ",
+        "file": "dma_ps.cpp",
+        "fileloc": "3",
+        "instructions": "201",
+        "total_instructions": "201",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "0": {
+    "basicblocks": 8,
+    "calls": "2 1",
+    "file": "dma_ps.cpp",
+    "fileloc": 79,
+    "instructions": 44,
+    "name": "acti_proc",
+    "total_instructions": 4591
+  },
+  "1": {
+    "basicblocks": 318,
+    "calls": "",
+    "file": "dma_ps.cpp",
+    "fileloc": 20,
+    "instructions": 3496,
+    "name": "matmul",
+    "total_instructions": 3950
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "dma_ps.cpp",
+    "fileloc": 3,
+    "instructions": 341,
+    "name": "activ",
+    "total_instructions": 597
+  }
+}

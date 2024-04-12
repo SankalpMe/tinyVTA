@@ -1,0 +1,453 @@
+--- !Failure
+Pass:            generate-ir-wrapper
+Name:            MAXIDepthUnspecified
+DebugLoc:        { File: dma_ps.cpp, Line: 79, Column: 0 }
+Function:        _Z9acti_procP6ap_intILi64EEPN3hls6vectorIfLm16EEE
+Args:            
+  - String:          'A depth specification is required for MAXI interface port '''
+  - Name:            insts
+  - String:          ''' for cosimulation.'
+...
+--- !Failure
+Pass:            generate-ir-wrapper
+Name:            MAXIDepthUnspecified
+DebugLoc:        { File: dma_ps.cpp, Line: 79, Column: 0 }
+Function:        _Z9acti_procP6ap_intILi64EEPN3hls6vectorIfLm16EEE
+Args:            
+  - String:          'A depth specification is required for MAXI interface port '''
+  - Name:            mem
+  - String:          ''' for cosimulation.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: dma_ps.cpp, Line: 55, Column: 24 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_55_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_55_9
+  - String:          ''' ('
+  - LoopLoc:         'dma_ps.cpp:55:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                   Line: 186, Column: 0 }
+Function:        _ZNSt5arrayIfLm16EEixEm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::__array_traits<float, 16ul>::_S_ref(float const (&) [16], unsigned long)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::array<float, 16ul>::operator[](unsigned long)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 186, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: dma_ps.cpp, Line: 3, Column: 0 }
+Function:        _Z5activPN3hls6vectorIfLm16EEEiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<float, 16ul>::operator[](unsigned long)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'activ(hls::vector<float, 16ul>*, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 3, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::array<float, 16ul>::operator[](unsigned long)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array', 
+                       Line: 186, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'matmul(hls::vector<float, 16ul>*, int, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: dma_ps.cpp, Line: 23, Column: 4 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          AB_block
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: dma_ps.cpp, Line: 24, Column: 4 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B_line
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: dma_ps.cpp, Line: 79, Column: 0 }
+Function:        _Z9acti_procP6ap_intILi64EEPN3hls6vectorIfLm16EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            mem
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: dma_ps.cpp, Line: 4, Column: 5 }
+Function:        _Z5activPN3hls6vectorIfLm16EEEiii
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            temp
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: dma_ps.cpp, Line: 67, Column: 8 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            AB_temp
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: dma_ps.cpp, Line: 54, Column: 5 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            Atemp
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: dma_ps.cpp, Line: 22, Column: 5 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            B_temp
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: dma_ps.cpp, Line: 8, Column: 8 }
+Function:        _Z5activPN3hls6vectorIfLm16EEEiii
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: dma_ps.cpp, Line: 15, Column: 11 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: dma_ps.cpp, Line: 8, Column: 8 }
+  - OrigDirection:   read
+  - OrigID:          LAA.load.4
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'activ(hls::vector<float, 16ul>*, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 3, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: dma_ps.cpp, Line: 15, Column: 11 }
+Function:        _Z5activPN3hls6vectorIfLm16EEEiii
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: dma_ps.cpp, Line: 8, Column: 8 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: dma_ps.cpp, Line: 15, Column: 11 }
+  - OrigDirection:   write
+  - OrigID:          for.inc13.store.67
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        'activ(hls::vector<float, 16ul>*, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 3, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: dma_ps.cpp, Line: 54, Column: 13 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: dma_ps.cpp, Line: 54, Column: 13 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_55_9.load.264
+  - ArrayName:       mem
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_51_8
+  - String:          ' '
+  - LoopLoc:         'dma_ps.cpp:51:23'
+  - String:          ' '
+  - Function:        'matmul(hls::vector<float, 16ul>*, int, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: dma_ps.cpp, Line: 44, Column: 13 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: dma_ps.cpp, Line: 44, Column: 13 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_45_7.load.279
+  - ArrayName:       mem
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_6
+  - String:          ' '
+  - LoopLoc:         'dma_ps.cpp:42:22'
+  - String:          ' '
+  - Function:        'matmul(hls::vector<float, 16ul>*, int, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: dma_ps.cpp, Line: 67, Column: 18 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: dma_ps.cpp, Line: 67, Column: 18 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_68_11.load.10
+  - ArrayName:       mem
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_64_10
+  - String:          ' '
+  - LoopLoc:         'dma_ps.cpp:64:22'
+  - String:          ' '
+  - Function:        'matmul(hls::vector<float, 16ul>*, int, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: dma_ps.cpp, Line: 72, Column: 39 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: dma_ps.cpp, Line: 72, Column: 39 }
+  - OrigDirection:   write
+  - OrigID:          for.inc114.store.65
+  - ArrayName:       mem
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_64_10
+  - String:          ' '
+  - LoopLoc:         'dma_ps.cpp:64:22'
+  - String:          ' '
+  - Function:        'matmul(hls::vector<float, 16ul>*, int, int, int, int)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: dma_ps.cpp, Line: 85, Column: 19 }
+Function:        _Z9acti_procP6ap_intILi64EEPN3hls6vectorIfLm16EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_85_1
+  - String:          ' '
+  - LoopLoc:         'dma_ps.cpp:85:19'
+  - String:          ' '
+  - Function:        'acti_proc(ap_int<64>*, hls::vector<float, 16ul>*)'
+    DebugLoc:        { File: dma_ps.cpp, Line: 79, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_64_10
+  - String:          '> at '
+  - LoopLoc:         'dma_ps.cpp:64:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_35_4
+  - String:          '> at '
+  - LoopLoc:         'dma_ps.cpp:35:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        LBB
+  - String:          '> at '
+  - LoopLoc:         'dma_ps.cpp:5:7'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: dma_ps.cpp, Line: 68, Column: 23 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_68_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: dma_ps.cpp, Line: 9, Column: 8 }
+Function:        _Z5activPN3hls6vectorIfLm16EEEiii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        LAA
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: dma_ps.cpp, Line: 21, Column: 0 }
+Function:        _Z6matmulPN3hls6vectorIfLm16EEEiiii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_68_11
+  - String:          ''' ('
+  - LoopLoc:         'dma_ps.cpp:68:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: dma_ps.cpp, Line: 3, Column: 0 }
+Function:        _Z5activPN3hls6vectorIfLm16EEEiii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LAA
+  - String:          ''' ('
+  - LoopLoc:         'dma_ps.cpp:9:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          activ
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
